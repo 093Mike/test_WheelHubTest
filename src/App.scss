@@ -1,0 +1,324 @@
+@import "styles/base";
+$breakpoint-portatil: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-movilS: 375px;
+
+.app { 
+  .app-content{
+    margin: 25px;
+  }
+  p{
+    color: $text-color;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  h4{
+    color: $dark-green-color;
+    font-weight: 700;
+  }
+  img {
+    max-width: 800px;
+    border: 1px solid $dark-green-color;
+    margin-bottom: 15px;
+  }
+  .app-header-logo{
+    max-height: 80px;
+    border: none;
+  }
+
+}
+.formHeader{
+  .appHeader{
+    display: flex;
+    background-color: $light-green-color;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+  }
+  .itemStep{
+    background-color: #788f9c;
+    color: $white;
+    height: 2.5em;
+    width: 2.5em;
+    padding: 0.5em 0 0 1em;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .itemActualStep{
+    background-color: $dark-green-color;
+    color: $white;
+    height: 2.75em;
+    width: 2.75em;
+    padding: 0.6em 0 0 1.2em;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .itemStepComplete{
+    background-color: $dark-green-color;
+    color: $white;
+    height: 2.75em;
+    width: 2.75em;
+    padding: 0.6em 0 0 0.2em;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .itemStepImg{
+    height: 2em;
+    width: 2em;
+  }
+
+  .progress{
+    width: 3em;
+    height: 0.3em;
+    background-color: $step-color;
+  }
+  .progressComplete{
+    width: 3em;
+    height: 0.3em;
+    background-color: $dark-green-color;
+  }
+}
+.formElements{
+
+  .mainform{
+    margin: auto;
+    padding: 2em 0;
+    width: 60%;
+  }
+
+
+  .progressComplete{
+    width: 5em;
+    height: 0.2em;
+    background-color: $dark-green-color;
+  }
+
+  .titleForm{
+    font-weight: bold;
+  }
+
+  .imgFormDiv{
+    margin: 2em;
+  }
+  .imgForm{
+    height: 15em;
+    margin: auto;
+    display: block;
+  }
+
+  .lineSeparate{
+    width: 100%;
+    height: 0.1em;
+    background-color: $step-color;
+    opacity: 0.5;
+  }
+
+  .navegation{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttonDisabled{
+    flex: 1;
+  }
+
+  .buttonNext{
+    text-align: end;
+    background-color: $green-color;
+    margin: 2em 1em;
+    padding: 1em;
+    color: $white;
+    cursor: pointer;
+    &:hover {
+      background-color: $dark-green-color;
+    }
+  }
+
+  .buttonBack{
+    text-align: end;
+    margin: 2em 1em;
+    padding: 1em;
+    color: $black;
+    cursor: pointer;
+  }
+
+  .checkBoxDiv{
+    display: flex;
+  }
+
+  .checkBox{
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .checkBoxLabel{
+    margin: 0em 0 1em 0.5em;
+  }
+
+  .checkBoxError{
+    display: none;
+    color: $red;
+  }
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin: 3em 0 0 0;
+    padding: 2em 0; 
+  }
+  .formElement{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1em 0em;
+  }
+  .formTwoElements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .formElementInput{
+    font-size: 1.3em;
+    padding: 0.5em;
+    margin: 0 1em;
+  }
+  .formElementLabel{
+    font-weight: bolder;
+    margin: 0 1em;
+  }
+  .formElementInfo{
+    margin: 0 1em;
+  }
+
+  .formElement1Error{    
+    display: none;
+    color: $red;
+  }
+  .formElement2Error{
+    display: none;
+    color: $red;
+    margin: 0 1.5em;
+  }
+  .formElement3Error{
+    display: none;
+    color: $red;
+    margin: 0 1.5em;
+  }
+  .formElement4Error{
+    display: none;
+    color: $red;
+  }
+
+
+  .formFinish{
+    display: flex;
+    flex-direction: row;
+  }
+  .formFinishImg{
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: block;
+  }
+  .formFinishText{
+    padding: 0 0em 2em 2em;
+  }
+
+  .password-wrapper {
+    background-color: #fff;
+    overflow: hidden;
+
+  }
+  .password-wrapper input {
+    padding: 10px 15px;
+    width: -webkit-fill-available;
+    color: #34495e;
+
+  }
+
+  .strength-lines {
+    position: relative;
+    bottom: 2px;
+    left: 20px;
+    right: 0;
+    width: -webkit-fill-available;
+    height: 2px;
+    margin: 0 2.5em 0 0em;
+    z-index: 3;
+  }
+
+
+  .line{
+    position: absolute;
+    background-color: $green-color ;
+    height: 6px;
+    
+  }
+
+
+  @media (max-width: $breakpoint-portatil) {
+    .mainform{
+      margin: auto;
+      padding: 2em 0;
+      width: 80%;
+    }  
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+
+    .imgForm{
+      height: auto;
+      width: 100%;
+      margin: auto;
+      display: block;
+    }
+
+    .formTwoElements{
+      display: flex;
+      flex-direction: column;
+    }
+    .formFinish{
+      display: flex;
+      flex-direction: column;
+    }
+    .formFinishImg{
+      height: auto;
+      width: 5em;
+      margin: auto;
+      display: block;
+    }
+    .formFinishText{
+      padding: 2em 0em 2em 2em;
+    }
+
+  }
+  
+  @media (max-width: $breakpoint-movilS) {
+    .buttonNext{
+      text-align: end;
+      background-color: $green-color;
+      margin: 1em;
+      padding: 0.5em;
+      color: $white;
+      cursor: pointer;
+      &:hover {
+        background-color: $green-color;
+      }
+    }
+  
+    .buttonBack{
+      text-align: end;
+      margin: 1em;
+      padding: 0.5em;
+      color: $black;
+      cursor: pointer;
+    }
+  }
+  
+}
